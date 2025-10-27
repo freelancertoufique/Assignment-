@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+    --primary:#7D7987;
+    --deepPrimary:#000000;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: all .4s;
+}
+a:hover{
+    color: var(--deepPrimary);
+}
+a:active{
+    color: var(--deepPrimary);
+}
+ul{
+    list-style: none;
+}
+header{
+    padding: 20px;
+    width: 100%;
+    z-index: 999999;
+    transition: all .4s;
+    position: relative;
+    background-color: white;
+    
+}
+header.active{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    
+}
+.logo{
+    width: 160px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoText{
+    width: 41px;
+    height: 41px;
+    background-color: #458FF6;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.logo small{
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 700;
+
+
+
+}
+.logo p{
+    font-size: 24px;
+    font-weight: 700;
+}
+nav{
+    width: 545px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navlist.active a{
+    color: var(--deepPrimary);
+}
+.menu{
+    width: 41px;
+    height: 41px;
+    border: 1px solid var(--deepPrimary);
+    display: none;
+    border-radius: 10px;
+    place-items: center;
+    padding: 5px 8px;
+    
+
+}
+.line{
+    width: 100%;
+    height: 1.2px;
+    background-color: var(--deepPrimary);
+}
+.hero{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.heroWrapper{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroLeft{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.heroLeft .element{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.heroLeft h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+    line-height: 56px;
+}
+.heroLeft p{
+color: var(--primary);
+font-weight: 300;
+font-size: 21px;
+line-height: 32px;
+letter-spacing: 0%;
+
+}
+.heroLeft button{
+    font-size: 18px;
+    height: 56px;
+    border-radius: 55px;
+    background-color: #458FF6;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    border:1.5px solid transparent;
+    outline: none ;
+    color: white;
+    transition: all .4s;
+}
+.heroLeft button:hover{
+    background-color: transparent;
+    border:1.5px solid #458FF6;
+    color: #458FF6;
+}
+.heroRight{
+    width: 693px;
+    height: auto;
+}
+.services{
+    margin-top: 56px;
+    position: relative;
+}
+.services .element{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 937px;
+    height: auto;
+}
+.element2{
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+}
+
+.heading{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 952px;
+    margin: 0 auto;
+}
+.heading h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+    line-height: 56px;
+}
+.heading div{
+    width: 56px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: var(--deepPrimary);
+}
+.heading p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary);
+    text-align: center;
+}
+.servicesWrapper{
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    position: relative;
+}
+.servicesCards{
+    padding: 20px ;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    transition: all .4s;
+    box-shadow: 0px 0px 15px -6px rgb(0 0 0.1);
+    border-radius:16px ;
+    transition: all .4s;
+    
+}
+.servicesCards:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    border-top: 2px solid #458FF6;
+}
+.servicesCards h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+}
+.servicesCards p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 28px;
+}
+.icon{
+    width: 91.98px;
+}
+.services button{
+    margin: 56px auto 0 auto;
+    width: 200px   ;
+    height: 56px;
+    border-radius: 55px;
+    border: 1.5px solid #458FF6;
+    color: #458FF6;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    transition:  all .4s;
+    background-color: transparent;
+}
+.services button:hover{
+    background-color: #458FF6;
+    color: white;
+    cursor: pointer;
+}
+.healthCare{
+    margin-bottom: 56px;
+    width: 100%;
+}
+.healthCare .container{
+    width: 1273px;
+}
+.healthCareWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.healthCareRight{
+    width: 486px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.healthCareRight h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+}
+.healthCareRight p{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 30px;
+}
+.healthCareRight button{
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    border:1.5px solid #458FF6;
+    outline: 1.px solid transparent;
+    color: #458FF6;
+    font-size: 18px;
+    transition: all .4s;
+}
+.healthCareRight button:hover{
+    background-color: #458FF6;
+    color: white;
+    cursor: pointer;
+}
+.healthcareLeft{
+    width: 650px;
+    height: auto;
+}
+.mobileApp{
+    width: 100%;
+    margin-top: 56px;
+
+}
+.mobileApp .container{
+    width: 1273px;
+}
+.mobileAppWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobileAppleft{
+    width: 420px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mobileAppleft h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+}
+.mobileAppleft p{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 30px;
+}
+.mobileAppleft .line{
+    width: 56px;
+    height: 2px;
+    background-color: var(--deepPrimary);
+}
+.mobileAppleft button{
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    background-color: transparent;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    transition: all .4s;
+    color: #458FF6;
+    border: 1.5px solid #458FF6;
+    font-size: 18px;
+    font-weight: 700;
+}
+.mobileAppleft button .icon{
+    width: 15px;
+    height: 15px;
+}
+.mobileAppleft button:hover{
+    background-color: #458FF6;
+    color: white;
+    cursor: pointer;
+}
+.mobileAppleft button .buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.mobileAppRight{
+    width: 665px;
+}
+.customerOpenion{
+    width: 100%;
+    margin-top: 56px;
+}
+.openion{
+   border: 24px;
+    padding: 40px 56px !important;
+    background: linear-gradient(45deg, #5A98F2 0%, #67C3F3 100%);
+    border-radius: 24px;
+    color: white !important;
+
+}
+.openion .heading h1{
+    color: white;
+}
+.openion .heading div{
+    background-color: white;
+}
+.openionProfile{
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    border: 2.5px solid white;
+    display: grid;
+    place-items: center;
+}
+.openionWrapper{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.openionLeft{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+.openionLeft h1{
+    font-size: 36;
+    font-weight: 700;
+}
+.openionLeft p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.openionRight{
+    width: 400px;
+    text-align: start;
+    color: white;
+    font-size: 19px;
+    line-height: 30px;
+}
+.moreOpenion{
+    width: 336px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dots{
+    width: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5B9BF3;
+}
+.arrow{
+    width: 28.06px;
+    height: 17.86px;
+}
+.article{
+    width: 100%;
+    margin-top: 56px;
+}
+.articleWrapper{
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.articleCard{
+    width: 100%;
+    height: auto;
+    transition: all .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px -6px rgb(0 0 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.articleText{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.articleText h2{
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--deepPrimary);
+    line-height: 36px;
+}
+.articleText p{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 28px;
+}
+.articleText button{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #458FF6;
+    font-size: 17px;
+}
+.articleText button img{
+    width: 14.14px;
+    height: 9px;
+}
+.articleButton button{
+    margin: 56px auto;
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    border:1.5px solid #458FF6;
+    outline: 1.5px solid transparent;
+    color: #458FF6;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .4s;
+}
+.articleButton button:hover{
+    background-color: #458FF6;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    margin-top: 56px;
+    background: linear-gradient(45deg, #458FF6, #67C3F3);
+}
+.footerWrapper{
+    padding: 56px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+.footerLeft{
+    width: 391px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footerLogo{
+    width: 160px;
+    height: auto;
+}
+.footerLeft p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+}
+.footerLeft small{
+    margin-top: 40px;
+    font: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+}
+.footerMiddle{
+    width: 15+0PX;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+.footerMiddle h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.footerMiddle ul li a{
+    color: white;
+    line-height: 40px;
+}
+.footerWrapper .element{
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+}
+.footerWrapper .element1{
+    position: absolute;
+    top: -100 px;
+    right: -100px;
+}
