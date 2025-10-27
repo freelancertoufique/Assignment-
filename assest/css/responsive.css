@@ -1,45 +1,56 @@
-@media screen and (max-width:1023px){
-    .container{
+@media screen and (max-width:1023px) {
+    .container {
         width: 100%;
         padding: 0 15px;
     }
-    .servicesWrapper{
-        grid-template-columns: repeat(2,1fr);
+
+    .servicesWrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .healthCare .container{
+
+    .healthCare .container {
         width: 100%;
     }
-    .healthcareLeft{
+
+    .healthcareLeft {
         width: 500px !important;
     }
-    .healthCareRight{
+
+    .healthCareRight {
         width: 300px;
     }
-    .healthCareRight h1{
+
+    .healthCareRight h1 {
         font-size: 32px;
         line-height: 48px;
     }
-    .healthCareRight p{
+
+    .healthCareRight p {
         font-size: 16px;
     }
+
     .mobileAppleft {
-       width: 400px;
-     }
-     .mobileAppleft p{
+        width: 400px;
+    }
+
+    .mobileAppleft p {
         font-size: 16px;
         line-height: 30px;
         font-weight: 300;
-     }
-     .mobileAppRight{
+    }
+
+    .mobileAppRight {
         width: 450px;
-     }
-     .mobileApp .container{
+    }
+
+    .mobileApp .container {
         width: 100%;
-     }
-     .customerOpenion {
+    }
+
+    .customerOpenion {
         width: 100%;
         padding: 0px 20px !important;
-     }
+    }
 
 }
 
@@ -53,19 +64,22 @@
 
 
 
-@media screen and (max-width:768px){
-    .container{
+@media screen and (max-width:768px) {
+    .container {
         width: 100%;
         padding: 0 15px;
     }
-    .menu{
+
+    .menu {
         display: grid !important;
     }
-    header{
+
+    header {
         position: relative;
-        
+
     }
-    .navItem{
+
+    .navItem {
         position: absolute;
         top: 81px;
         left: 0px;
@@ -80,141 +94,174 @@
         z-index: 99;
         box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
     }
-    .navItem.active{
+
+    .navItem.active {
         display: flex;
     }
-    .heroWrapper{
+
+    .heroWrapper {
         flex-direction: column;
         gap: 30px;
     }
-    .heroLeft{
+
+    .heroLeft {
         width: 100%;
         align-items: center;
         text-align: center;
     }
-    .heroLeft h1{
+
+    .heroLeft h1 {
         font-size: 36px;
         text-align: center;
     }
-    .heroLeft p{
+
+    .heroLeft p {
         font-size: 16px;
         text-align: center !important;
     }
-    .heroLeft button{
+
+    .heroLeft button {
         width: 100%;
     }
-    .heroRight{
+
+    .heroRight {
         width: 100%;
     }
-    .services{
+
+    .services {
         width: 100%;
     }
-    .services button{
+
+    .services button {
         width: 100%;
     }
-    .heading{
+
+    .heading {
         width: 100%;
     }
-    .heading h1{
+
+    .heading h1 {
         font-size: 32px;
         text-align: center;
 
     }
-    .heading p{
+
+    .heading p {
         font-size: 16px;
     }
-    .servicesWrapper{
-        grid-template-columns: repeat(1,1fr);
-    }
-.healthCareWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.healthcareLeft{
-    width: 80%;
-}
-.healthCareRight{
-    width: 100%;
-    margin-top: 56px;
-}
-.healthCareRight button{
-    width: 100%;
-}
-.mobileAppWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 56px;
-}
-.mobileAppleft{
-    width: 100%;
-    text-align: center;
-}
-.mobileAppleft .line{
-    margin: 0 auto;
-}
-.mobileAppleft button{
-    width: 100%;
-    display: grid;
-    place-items: center;
-    justify-content: center;
 
-    
-}
-.mobileAppleft button .buttonWrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.openionWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 56px 0px;
-}
-.openionLeft{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.openionText{
-    width: 100%;
-}
-.openionRight{
-    width: 100%;
-}
-.article{
-    width: 100%;
-}
-.articleWrapper{
-    grid-template-columns: repeat(1,1fr);
-}
-.articleButton button{
-    width: 100%;
-}
-.footer{
-    width: 100%;
-}
-.footerWrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    
-}
-.footerLeft{
-    width: 100%;
-}
-.footerMiddle{
-    width: 100%;
-}
+    .servicesWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .healthCareWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .healthcareLeft {
+        width: 80%;
+    }
+
+    .healthCareRight {
+        width: 100%;
+        margin-top: 56px;
+    }
+
+    .healthCareRight button {
+        width: 100%;
+    }
+
+    .mobileAppWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 56px;
+    }
+
+    .mobileAppleft {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobileAppleft .line {
+        margin: 0 auto;
+    }
+
+    .mobileAppleft button {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+
+
+    }
+
+    .mobileAppleft button .buttonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .openionWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 56px 0px;
+    }
+
+    .openionLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .openionText {
+        width: 100%;
+    }
+
+    .openionRight {
+        width: 100%;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .articleWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .articleButton button {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footerWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .footerLeft {
+        width: 100%;
+    }
+
+    .footerMiddle {
+        width: 100%;
+    }
 }

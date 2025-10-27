@@ -1,65 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
-:root{
-    --primary:#7D7987;
-    --deepPrimary:#000000;
+
+:root {
+    --primary: #7D7987;
+    --deepPrimary: #000000;
 }
-.container{
+
+.container {
     width: 1140px;
     margin: 0 auto;
 }
-img{
+
+img {
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--primary);
     transition: all .4s;
 }
-a:hover{
+
+a:hover {
     color: var(--deepPrimary);
 }
-a:active{
+
+a:active {
     color: var(--deepPrimary);
 }
-ul{
+
+ul {
     list-style: none;
 }
-header{
+
+header {
     padding: 20px;
     width: 100%;
     z-index: 999999;
     transition: all .4s;
     position: relative;
     background-color: white;
-    
+
 }
-header.active{
+
+header.active {
     position: sticky;
     top: 0px;
     left: 0px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-    
+
 }
-.logo{
+
+.logo {
     width: 160px;
     height: 41px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.headerWrapper{
+
+.headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.logoText{
+
+.logoText {
     width: 41px;
     height: 41px;
     background-color: #458FF6;
@@ -68,7 +81,8 @@ header.active{
     justify-content: center;
     border-radius: 50%;
 }
-.logo small{
+
+.logo small {
     font-size: 26px;
     color: #FFFFFF;
     font-weight: 700;
@@ -76,23 +90,28 @@ header.active{
 
 
 }
-.logo p{
+
+.logo p {
     font-size: 24px;
     font-weight: 700;
 }
-nav{
+
+nav {
     width: 545px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
-.navlist.active a{
+
+.navlist.active a {
     color: var(--deepPrimary);
 }
-.menu{
+
+.menu {
     width: 41px;
     height: 41px;
     border: 1px solid var(--deepPrimary);
@@ -100,52 +119,60 @@ nav ul{
     border-radius: 10px;
     place-items: center;
     padding: 5px 8px;
-    
+
 
 }
-.line{
+
+.line {
     width: 100%;
     height: 1.2px;
     background-color: var(--deepPrimary);
 }
-.hero{
+
+.hero {
     width: 100%;
     height: auto;
     position: relative;
 }
-.heroWrapper{
+
+.heroWrapper {
     margin-top: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.heroLeft{
+
+.heroLeft {
     width: 445px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
-.heroLeft .element{
+
+.heroLeft .element {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.heroLeft h1{
+
+.heroLeft h1 {
     font-size: 48px;
     font-weight: 700;
     color: var(--deepPrimary);
     line-height: 56px;
 }
-.heroLeft p{
-color: var(--primary);
-font-weight: 300;
-font-size: 21px;
-line-height: 32px;
-letter-spacing: 0%;
+
+.heroLeft p {
+    color: var(--primary);
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0%;
 
 }
-.heroLeft button{
+
+.heroLeft button {
     font-size: 18px;
     height: 56px;
     border-radius: 55px;
@@ -153,25 +180,29 @@ letter-spacing: 0%;
     display: grid;
     place-items: center;
     width: 200px;
-    border:1.5px solid transparent;
-    outline: none ;
+    border: 1.5px solid transparent;
+    outline: none;
     color: white;
     transition: all .4s;
 }
-.heroLeft button:hover{
+
+.heroLeft button:hover {
     background-color: transparent;
-    border:1.5px solid #458FF6;
+    border: 1.5px solid #458FF6;
     color: #458FF6;
 }
-.heroRight{
+
+.heroRight {
     width: 693px;
     height: auto;
 }
-.services{
+
+.services {
     margin-top: 56px;
     position: relative;
 }
-.services .element{
+
+.services .element {
     position: absolute;
     top: 50%;
     left: 0px;
@@ -179,79 +210,90 @@ letter-spacing: 0%;
     width: 937px;
     height: auto;
 }
-.element2{
+
+.element2 {
     position: absolute;
     top: 50%;
     right: -30px;
     transform: translateY(-50%);
 }
 
-.heading{
-   display: flex;
+.heading {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 952px;
     margin: 0 auto;
 }
-.heading h1{
+
+.heading h1 {
     font-size: 36px;
     font-weight: 700;
     color: var(--deepPrimary);
     line-height: 56px;
 }
-.heading div{
+
+.heading div {
     width: 56px;
     height: 2px;
     margin-top: 20px;
     background-color: var(--deepPrimary);
 }
-.heading p{
+
+.heading p {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 300;
     color: var(--primary);
     text-align: center;
 }
-.servicesWrapper{
+
+.servicesWrapper {
     margin-top: 56px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     position: relative;
 }
-.servicesCards{
-    padding: 20px ;
+
+.servicesCards {
+    padding: 20px;
     border: 1px solid transparent;
     outline: 1px solid transparent;
     transition: all .4s;
     box-shadow: 0px 0px 15px -6px rgb(0 0 0.1);
-    border-radius:16px ;
+    border-radius: 16px;
     transition: all .4s;
-    
+
 }
-.servicesCards:hover{
+
+.servicesCards:hover {
     cursor: pointer;
     transform: translateY(-10px);
     border-top: 2px solid #458FF6;
 }
-.servicesCards h2{
+
+.servicesCards h2 {
     font-size: 24px;
     font-weight: 700;
     color: var(--deepPrimary);
 }
-.servicesCards p{
+
+.servicesCards p {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 300;
     color: var(--primary);
     line-height: 28px;
 }
-.icon{
+
+.icon {
     width: 91.98px;
 }
-.services button{
+
+.services button {
     margin: 56px auto 0 auto;
-    width: 200px   ;
+    width: 200px;
     height: 56px;
     border-radius: 55px;
     border: 1.5px solid #458FF6;
@@ -260,105 +302,122 @@ letter-spacing: 0%;
     place-items: center;
     font-size: 16px;
     font-weight: 700;
-    transition:  all .4s;
+    transition: all .4s;
     background-color: transparent;
 }
-.services button:hover{
+
+.services button:hover {
     background-color: #458FF6;
     color: white;
     cursor: pointer;
 }
-.healthCare{
+
+.healthCare {
     margin-bottom: 56px;
     width: 100%;
 }
-.healthCare .container{
+
+.healthCare .container {
     width: 1273px;
 }
-.healthCareWrapper{
+
+.healthCareWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.healthCareRight{
+.healthCareRight {
     width: 486px;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.healthCareRight h1{
+
+.healthCareRight h1 {
     font-size: 36px;
     font-weight: 700;
     color: var(--deepPrimary);
 }
-.healthCareRight p{
+
+.healthCareRight p {
     font-size: 18px;
     font-weight: 300;
     color: var(--primary);
     line-height: 30px;
 }
-.healthCareRight button{
+
+.healthCareRight button {
     width: 200px;
     height: 56px;
     border-radius: 55px;
     background-color: transparent;
     display: grid;
     place-items: center;
-    border:1.5px solid #458FF6;
+    border: 1.5px solid #458FF6;
     outline: 1.px solid transparent;
     color: #458FF6;
     font-size: 18px;
     transition: all .4s;
 }
-.healthCareRight button:hover{
+
+.healthCareRight button:hover {
     background-color: #458FF6;
     color: white;
     cursor: pointer;
 }
-.healthcareLeft{
+
+.healthcareLeft {
     width: 650px;
     height: auto;
 }
-.mobileApp{
+
+.mobileApp {
     width: 100%;
     margin-top: 56px;
 
 }
-.mobileApp .container{
+
+.mobileApp .container {
     width: 1273px;
 }
-.mobileAppWrapper{
+
+.mobileAppWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.mobileAppleft{
+
+.mobileAppleft {
     width: 420px;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.mobileAppleft h1{
+
+.mobileAppleft h1 {
     font-size: 36px;
     font-weight: 700;
     color: var(--deepPrimary);
 }
-.mobileAppleft p{
+
+.mobileAppleft p {
     font-size: 18px;
     font-weight: 300;
     color: var(--primary);
     line-height: 30px;
 }
-.mobileAppleft .line{
+
+.mobileAppleft .line {
     width: 56px;
     height: 2px;
     background-color: var(--deepPrimary);
 }
-.mobileAppleft button{
+
+.mobileAppleft button {
     width: 200px;
     height: 56px;
     border-radius: 55px;
@@ -372,43 +431,52 @@ letter-spacing: 0%;
     font-size: 18px;
     font-weight: 700;
 }
-.mobileAppleft button .icon{
+
+.mobileAppleft button .icon {
     width: 15px;
     height: 15px;
 }
-.mobileAppleft button:hover{
+
+.mobileAppleft button:hover {
     background-color: #458FF6;
     color: white;
     cursor: pointer;
 }
-.mobileAppleft button .buttonWrapper{
+
+.mobileAppleft button .buttonWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.mobileAppRight{
+
+.mobileAppRight {
     width: 665px;
 }
-.customerOpenion{
+
+.customerOpenion {
     width: 100%;
     margin-top: 56px;
 }
-.openion{
-   border: 24px;
+
+.openion {
+    border: 24px;
     padding: 40px 56px !important;
     background: linear-gradient(45deg, #5A98F2 0%, #67C3F3 100%);
     border-radius: 24px;
     color: white !important;
 
 }
-.openion .heading h1{
+
+.openion .heading h1 {
     color: white;
 }
-.openion .heading div{
+
+.openion .heading div {
     background-color: white;
 }
-.openionProfile{
+
+.openionProfile {
     width: 141px;
     height: 141px;
     border-radius: 50%;
@@ -418,69 +486,81 @@ letter-spacing: 0%;
     display: grid;
     place-items: center;
 }
-.openionWrapper{
+
+.openionWrapper {
     margin-top: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.openionLeft{
+
+.openionLeft {
     width: 600px;
     display: flex;
     align-items: center;
     gap: 20px;
     color: white;
 }
-.openionLeft h1{
+
+.openionLeft h1 {
     font-size: 36;
     font-weight: 700;
 }
-.openionLeft p{
+
+.openionLeft p {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
 }
-.openionRight{
+
+.openionRight {
     width: 400px;
     text-align: start;
     color: white;
     font-size: 19px;
     line-height: 30px;
 }
-.moreOpenion{
+
+.moreOpenion {
     width: 336px;
     margin: 40px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.dots{
+
+.dots {
     width: 94px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.dot{
+
+.dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #5B9BF3;
 }
-.arrow{
+
+.arrow {
     width: 28.06px;
     height: 17.86px;
 }
-.article{
+
+.article {
     width: 100%;
     margin-top: 56px;
 }
-.articleWrapper{
+
+.articleWrapper {
     margin-top: 56px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.articleCard{
+
+.articleCard {
     width: 100%;
     height: auto;
     transition: all .4s;
@@ -492,26 +572,30 @@ letter-spacing: 0%;
     border-radius: 20px;
     overflow: hidden;
 }
-.articleText{
+
+.articleText {
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 20px;
 }
-.articleText h2{
+
+.articleText h2 {
     font-size: 21px;
     font-weight: 700;
     color: var(--deepPrimary);
     line-height: 36px;
 }
-.articleText p{
+
+.articleText p {
     font-size: 16px;
     font-weight: 300;
     color: var(--primary);
     line-height: 28px;
 }
-.articleText button{
+
+.articleText button {
     background: transparent;
     border: none;
     outline: none;
@@ -521,11 +605,13 @@ letter-spacing: 0%;
     color: #458FF6;
     font-size: 17px;
 }
-.articleText button img{
+
+.articleText button img {
     width: 14.14px;
     height: 9px;
 }
-.articleButton button{
+
+.articleButton button {
     margin: 56px auto;
     width: 200px;
     height: 56px;
@@ -533,56 +619,64 @@ letter-spacing: 0%;
     background-color: transparent;
     display: grid;
     place-items: center;
-    border:1.5px solid #458FF6;
+    border: 1.5px solid #458FF6;
     outline: 1.5px solid transparent;
     color: #458FF6;
     font-size: 16px;
     font-weight: 700;
     transition: all .4s;
 }
-.articleButton button:hover{
+
+.articleButton button:hover {
     background-color: #458FF6;
     color: white;
     cursor: pointer;
 }
-footer{
+
+footer {
     width: 100%;
     margin-top: 56px;
     background: linear-gradient(45deg, #458FF6, #67C3F3);
 }
-.footerWrapper{
+
+.footerWrapper {
     padding: 56px 0px;
     display: flex;
     justify-content: space-between;
     align-items: start;
     position: relative;
 }
-.footerLeft{
+
+.footerLeft {
     width: 391px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-.footerLogo{
+
+.footerLogo {
     width: 160px;
     height: auto;
 }
-.footerLeft p{
+
+.footerLeft p {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 300;
     color: white;
     line-height: 30px;
 }
-.footerLeft small{
+
+.footerLeft small {
     margin-top: 40px;
     font: 18px;
     font-weight: 300;
     line-height: 30px;
     color: white;
 }
-.footerMiddle{
+
+.footerMiddle {
     width: 15+0PX;
     display: flex;
     flex-direction: column;
@@ -592,21 +686,25 @@ footer{
     font-weight: 300;
 
 }
-.footerMiddle h2{
+
+.footerMiddle h2 {
     font-size: 24px;
     font-weight: 700;
     color: white;
 }
-.footerMiddle ul li a{
+
+.footerMiddle ul li a {
     color: white;
     line-height: 40px;
 }
-.footerWrapper .element{
+
+.footerWrapper .element {
     position: absolute;
     bottom: 0px;
     left: -100px;
 }
-.footerWrapper .element1{
+
+.footerWrapper .element1 {
     position: absolute;
     top: -100 px;
     right: -100px;
